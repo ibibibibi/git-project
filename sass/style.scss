@@ -1,0 +1,67 @@
+/* variables*/
+$color-gold: #FED136;
+$font-main: 'Noto Sans', ;
+$font-golden: 'Pacifico', ;
+
+/*header*/
+
+.header {
+    background-image: url("https://c.pxhere.com/photos/76/9e/gadgets_office_equipment_iphone_music_men's_purse_glasses-971375.jpg!d");
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    background-position-x: 100%;
+    height: 400px;
+}
+
+.logo {
+    color: $color-gold;
+    font-style: italic;
+    font-family: $font-golden;
+    font-size: 12px;
+    padding: 15px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: right;
+    
+    ul {
+        list-style: none;
+        display: flex;
+        li {
+            font-family: $font-main;
+            color: white;
+            padding: 10px;
+            font-size: 8px;
+        }
+    }
+}
+
+.btn {
+    background-color: $color-gold;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    min-width: 140px;
+    margin: 0;
+    padding: 16px;
+}
+
+/*title*/
+
+.title {
+    color: white;
+    font-family: $font-main;
+    text-align: center;
+    padding: 20px;
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+}
