@@ -62,4 +62,89 @@
 .title h2 {
   font-size: 45px;
 }
+
+/*services*/
+.services {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.services h3 {
+  font-family: "Noto Sans";
+  padding-bottom: 0;
+}
+
+.services h4 {
+  padding-top: 0;
+  font-style: italic;
+  color: gray;
+}
+
+.services-box-wrapper {
+  padding-top: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.services-box-wrapper .box {
+  padding-top: 15px;
+  -ms-flex: 0 0 33.333%;
+      flex: 0 0 33.333%;
+}
+
+.services-box-wrapper .box h5 {
+  font-size: 16px;
+  font-family: "Noto Sans";
+}
+
+.services-box-wrapper .box p {
+  color: gray;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.services-box-wrapper .box i {
+  text-align: center;
+  color: #FED136;
+  font-size: 20px;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #FED136;
+  border-radius: 50%;
+  line-height: 40px;
+}
+
+/*footer*/
+.footer {
+  background-color: white;
+  margin: 36px 0;
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer ul li {
+  padding: 0 10px;
+}
+
+.footer i {
+  color: white;
+  font-size: 20px;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+}
 /*# sourceMappingURL=style.css.map */
