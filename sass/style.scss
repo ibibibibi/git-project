@@ -20,15 +20,19 @@ $font-golden: 'Pacifico', ;
     font-family: $font-golden;
     font-size: 12px;
     padding: 15px;
+    display: flex;
+    flex: 50% 0;
 }
 
 .nav-bar {
     display: flex;
-    align-items: right;
+    flex: 0 50%;
     
     ul {
         list-style: none;
         display: flex;
+        text-align: right;
+
         li {
             font-family: $font-main;
             color: white;
@@ -71,6 +75,7 @@ $font-golden: 'Pacifico', ;
 .services {
 text-align: center;
 padding-top: 10px;
+margin-bottom: 20px;
 
     h3 {
         font-family: $font-main;
@@ -91,7 +96,7 @@ flex-wrap: wrap;
 justify-content: space-between;
 
     .box {
-        padding-top: 15px;
+        padding-bottom: 50 px;
         flex: 0 0 33.333%;
 
         h5 {
@@ -121,16 +126,102 @@ justify-content: space-between;
     }
 }
 
+/*our portfolio*/
+
+.portfolio {
+    background-color: whitesmoke;
+    padding-bottom: 55px;
+    padding-top: 35px;
+}
+
+.portfolio-title {
+text-align: center;
+padding-bottom: 25px;
+
+
+    h3 {
+        font-family: $font-main;
+        padding-bottom: 0;
+    }
+
+    h4 {
+        padding-top: 0;
+        font-style: italic;
+        color: gray;
+    }
+}
+
+.portfolio-box-wrapper {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+flex-direction: row;
+overflow-wrap: break-word;
+
+    .col-lg-3, .col-sm-6 {
+        position: relative;
+        padding: 25px;
+        height: 350px;
+        width: 250px;
+        flex: 0 0 33.333%;
+    }
+}
+
+.card-title {
+    margin: 0 0 12px 0;
+    position: absolute;
+    height: 100px;
+    width: 250px;
+    background-color: white;
+    text-align: center;
+    padding: 15px 15px 20px 15px;
+
+    h5 {
+        font-size: 16px;
+        margin: 25px 0 0 0;
+        font-family: $font-main;
+    }
+
+    h6 {
+        color: gray;
+        font-size: 12px;
+        margin: 0px;
+        font-family: $font-main;
+    }
+}
+
+.card-image {
+    img {
+        position: static;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+
+
 /*footer*/
 
 .footer {
     background-color: white;
     margin: 36px 0;
     text-align: center;
+    display: flex;
+
+    .copyright {
+        flex: 50% 0;
+        text-align: center;
+        justify-items: center;
+    }
 
     ul {
     list-style: none;
     display: flex;
+    flex: 0 50%;
 
         li {
             padding: 0 10px;
@@ -146,4 +237,10 @@ justify-content: space-between;
         border-radius: 50%;
         line-height: 40px;
         }
+}
+
+@media (max-width: 568px) {
+    .footer {
+        flex-direction: column;
+    }
 }
