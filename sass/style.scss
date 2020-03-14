@@ -130,8 +130,7 @@ justify-content: space-between;
 
 .portfolio {
     background-color: whitesmoke;
-    padding-bottom: 55px;
-    padding-top: 35px;
+    padding: 55px 0 35px 0;
 }
 
 .portfolio-title {
@@ -158,15 +157,20 @@ justify-content: space-between;
 flex-direction: row;
 overflow-wrap: break-word;
 
-    .col-lg-3, .col-sm-6 {
+    .card {
         position: relative;
-        padding: 25px;
+        padding: 15px;
         height: 350px;
         width: 250px;
+        max-width: 100%;
         flex: 0 0 33.333%;
     }
 }
 
+.card-box-wrapper {
+    max-width: 100%;
+    padding: 0;
+}
 .card-title {
     margin: 0 0 12px 0;
     position: absolute;
@@ -238,8 +242,48 @@ overflow-wrap: break-word;
         line-height: 40px;
         }
 }
+@media (max-width: 768px) {
+    .navbar {
+        max-width: unset;
+    }   
 
+    .portfolio-box-wrapper {
+        
+        padding: 0;
+    }
+
+    .portfolio {
+        padding-left: 0;
+    }
+
+    .card {
+        padding: 0;
+        flex: 0 0 100%;
+    }
+}
 @media (max-width: 568px) {
+    .header {
+        height: unset;
+    }
+    
+    .navbar {
+        max-width: unset;
+    }
+
+    .portfolio-box-wrapper {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .portfolio {
+        padding-left: 0;
+    }
+
+    .card {
+        padding: 0;
+        flex: none;
+    }
+
     .footer {
         flex-direction: column;
     }
